@@ -1,7 +1,6 @@
 # docker-registry
 
-## get pipework
-
+```sh
 git clone https://github.com/jpetazzo/pipework.git
 
 sudo echo '
@@ -16,3 +15,6 @@ sudo echo '
 }
 ' > /etc/docker/daemon.json
 sudo systemctl restart docker
+
+sh -x run.sh
+```
