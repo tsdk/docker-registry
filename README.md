@@ -1,9 +1,10 @@
 # docker-registry
 
-#get pipework
+## get pipework
+
 git clone https://github.com/jpetazzo/pipework.git
 
-sudo echo "
+sudo echo '
 {
   "registry-mirrors": [
     "https://docker.mirrors.ustc.edu.cn/",
@@ -13,5 +14,5 @@ sudo echo "
     "192.168.82.253:5000"
   ]
 }
-" > /etc/docker/daemon.json
+' > /etc/docker/daemon.json
 sudo systemctl restart docker
